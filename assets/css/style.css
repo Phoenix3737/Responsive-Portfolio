@@ -1,7 +1,5 @@
 #blueText {
-    position:fixed;
-    top: 125px;
-    left: 200px;
+    
     text-align: center;
     color:#4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -19,24 +17,27 @@
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-color: #ffffff;
-    position:fixed;
-    top: 207px;
-    left: 200px;
-    /* padding-left: 16px;
-    padding-right: 16px; */
+  
+
 } 
-#header {
-    float: left;
-    height: 79px;
+header h1 {
+    width: 250px;
+    height: 100%;
     color: #ffffff;
     background-color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    position:fixed;
-    left: 200px;
+    text-align: center;
     padding-left: 15px;
     padding-right: 15px;
-    
+    float: left;
+    margin: 0;
+    line-height: 80px;
+ }
 
+header {
+    height: 80px;
+    border-bottom: 2px solid #bdbdbd;
+    background-color: #ffffff;
 }
 
 img {
@@ -52,15 +53,14 @@ img {
     overflow: hidden;   
     float: right;
     text-align: right;
-    /* padding-right: 185px; */
-    margin-left: 100%;
+
+
     margin-bottom: 25px;
-    /* width: 1331px; */
+
     height: 79px;
-    border-bottom: 2px solid #bdbdbd;
+
     line-height: 80px;
-    width: 1366px;
-    padding-right: 180px;
+    width: 400px;
     }
 
 .topnav a {
@@ -83,6 +83,7 @@ img {
 
 body {
     background-image: url("../images/dust_scratches.png");
+    margin: 0px;
 }
 
 
@@ -108,9 +109,7 @@ body {
     float: left;
     align-self: center;
     background-color: #ffffff;
-    position:fixed;
-    top: 207px;
-    left: 200px;
+
     padding-left: 86px;
     padding-top: 27px;
     padding-bottom: 15px;
@@ -119,25 +118,31 @@ body {
     
 } 
 
-#contact {
-    position:fixed;
-    top: 125px;
-    left: 200px;
+.contact h1 {
+
     text-align: center;
     color:#4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     background-color: #ffffff;
-    padding-right: 818px;
+    padding-right: 400px;
     border-bottom: 2px solid #bdbdbd;
     padding-left: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-top: 0;
     /* padding-bottom: 11px; */
 
 } 
 
+.contact {
+    float: left;
+    width: 60%;
+    padding-right: 35px;
+}
+
 #portfolio {
-    position:fixed;
-    top: 125px;
-    left: 200px;
+
     color:#4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     background-color: #ffffff;
@@ -149,33 +154,38 @@ body {
 
 }
 
-.form {
-    width: 960px;
+.contact-form {
+
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-color: #ffffff;
-    position:fixed;
-    top: 207px;
-    left: 200px;
-    padding-top: 20px;
+
+    padding: 20px;
 } 
+
+.form-group {
+    margin: 20px 0px;
+    
+}
+
+.form-group label {
+    display: block;
+}
 
 .button {
     background-color: #4aaaa5;
     border: none;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
-    margin-left: 71px;
+
 }
 
 .textPadding {
@@ -184,3 +194,89 @@ body {
     padding-top: 16px;
 }
 
+.social {
+    background-color: #ffffff;
+    text-align: center;
+    color:#4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    float: right;
+    width: 33%; 
+  
+   
+}
+
+.social-header {
+    
+    background-color: #ffffff;
+    border-bottom: 2px solid #bdbdbd;
+    margin-bottom: 13px;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-reddit {
+    background: #ff5700;
+    color: white;
+  }
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    margin:0 auto;
+    width: 960px;
+}
+
+@media only screen and (max-width: 980px) {
+    .container {
+        width: 960px;
+    }
+    .social, .contact {
+        float: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 700px;
+    }
+
+    .topnav {
+        float: left;
+        text-align: left;
+
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+}
