@@ -66,7 +66,7 @@ img {
 .topnav a {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration: none;
     border-left:solid 1px #777777;
     padding: 15px;
@@ -89,12 +89,12 @@ body {
 
  .footer {
      position: fixed; 
-     top: 625px;
      left: 0px;
+     bottom: 0px;
      background-color: #777777;
      border-top: solid 8px #4aaaa5;
      width: 1367px;
-     height: 60px;
+     height: 45px;
      text-align: center;
      padding-top: 25px;
      font-family: 'Georgia', Times, Times New Roman, serif;
@@ -131,14 +131,14 @@ body {
     padding-bottom: 25px;
     padding-top: 25px;
     margin-top: 0;
-    /* padding-bottom: 11px; */
+
 
 } 
 
 .contact {
     float: left;
     width: 60%;
-    padding-right: 35px;
+    border: 1px solid #bdbdbd; 
 }
 
 #portfolio {
@@ -159,7 +159,7 @@ body {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-color: #ffffff;
-
+    
     padding: 20px;
 } 
 
@@ -200,7 +200,10 @@ body {
     color:#4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     float: right;
-    width: 33%; 
+    width: 33%;
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border: 1px solid #bdbdbd; 
   
    
 }
