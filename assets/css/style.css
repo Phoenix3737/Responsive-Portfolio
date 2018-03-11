@@ -201,9 +201,8 @@ body {
 
 .portfolio-p {
     float: left;
-    align-self: center;
-    background-color: #ffffff;
-    padding-left: 86px;
+    height: 625px;
+    padding-left: 90px;
     padding-top: 27px;
     padding-bottom: 15px;
 }
